@@ -11,8 +11,8 @@ import { motion } from 'framer-motion';
 const GROOM_X = '50%'; // move left ↔ right
 const GROOM_Y = '50%'; // move up ↕ down
 
-const BRIDE_X = '50%'; // move left ↔ right
-const BRIDE_Y = '25%'; // move up ↕ down
+const BRIDE_X = '1%'; // move left ↔ right
+const BRIDE_Y = '20%'; // move up ↕ down
 // ─────────────────────────────────────────────
 
 const PhotoCircle: React.FC<{
@@ -63,7 +63,7 @@ const Couple: React.FC<ThemeProps> = ({ isDark }) => {
       <div className="flex flex-col items-center group">
         <div className="mb-8">
           <PhotoCircle
-            src="/images/groom.jpeg"
+            src="/images/groom.jpg"
             alt="Sardar Vali — The Groom"
             isDark={isDark}
             accent="sky"
@@ -100,7 +100,7 @@ const Couple: React.FC<ThemeProps> = ({ isDark }) => {
       <div className="flex flex-col items-center group">
         <div className="mb-8">
           <PhotoCircle
-            src="/images/bride.jpeg"
+            src="/images/bride.jpg"
             alt="Sumiya Begam — The Bride"
             isDark={isDark}
             accent="pink"
